@@ -8,6 +8,9 @@ Whether you're tracking current TV shows, building a list of movies to watch, or
 
 ## Key Features
 
+### 🔌 Required Simkl Sync
+Plotpoint integrates directly with Simkl to retrieve and synchronize your watchlists, show progress, and ratings. A Simkl account is required to use the tracking and syncing features of the app.
+
 ### 📺 Smart Watchlist Tracking
 Organize all your television series and movies in one unified list. Keep track of what season and episode you're currently on, rate your favorite media, and manage what to watch next.
 
@@ -21,9 +24,6 @@ Protect yourself from plot details before you watch. When enabled, Plotpoint:
 
 ### 🔄 Multi-Device iCloud Sync
 Your watchlist and personal preferences are backed up automatically and synced securely across all your personal iOS and macOS devices using Apple iCloud.
-
-### 🔌 Required Simkl Sync
-Plotpoint integrates directly with Simkl to retrieve and synchronize your watchlists, show progress, and ratings. A Simkl account is required to use the tracking and syncing features of the app.
 
 ---
 

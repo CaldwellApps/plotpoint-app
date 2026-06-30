@@ -8,6 +8,66 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Structured Data for SEO / GEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Plotpoint",
+      "operatingSystem": "iOS 18.0+, macOS 15.0+",
+      "applicationCategory": "MultimediaApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD"
+      },
+      "description": "Plotpoint is a premium, privacy-focused media tracker for TV shows and movies with Simkl synchronization, spoiler protection, and high-res artwork integrations.",
+      "author": {
+        "@type": "Organization",
+        "name": "Caldwell Apps"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Plotpoint?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Plotpoint is a premium, privacy-focused media tracker for TV shows and movies with Simkl synchronization, spoiler protection, and high-res artwork integrations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Plotpoint track my personal data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Plotpoint stores all watchlist data and settings locally or securely in your private Apple iCloud container. There are no third-party servers collecting your data."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Plotpoint avoid TV show episode spoilers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Plotpoint features a native 'Hide Episode Spoilers' toggle. When enabled, episode descriptions are hidden behind a spoiler alert, and specific episode thumbnails are replaced with general season posters."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I sync my watchlist with Simkl?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Plotpoint has a built-in background SyncManager that handles updates off the main thread. Simply authorize your Simkl account to sync watchlists, ratings, and watch history."
+          }
+        }
+      ]
+    }
+    </script>
     <style>
         :root {
             --bg-color: #0b0c10;
@@ -609,6 +669,7 @@
             
             <nav>
                 <span id="nav-home" onclick="showTab('home')" class="nav-link active">Home</span>
+                <span id="nav-faq" onclick="showTab('faq')" class="nav-link">FAQ</span>
                 <span id="nav-support" onclick="showTab('support')" class="nav-link">Support</span>
                 <span id="nav-privacy" onclick="showTab('privacy')" class="nav-link">Privacy</span>
                 <span id="nav-terms" onclick="showTab('terms')" class="nav-link">Terms</span>
@@ -625,7 +686,7 @@
                 Now Integrated with Simkl & TVDB
             </div>
             <h1>Track. Sync.<br>Never miss a release.</h1>
-            <p>Your ultimate personal entertainment tracker. Organize your watchlist, monitor upcoming episodes, and synchronize lists seamlessly—all protected behind fully native spoiler controls.</p>
+            <p>Your ultimate privacy-first media tracker. Keep TV shows and movies in sync with Simkl without storing any data on external servers. All watchlists, release calendars, and ratings are stored in your secure iCloud container.</p>
             <a onclick="showTab('support')" class="cta-btn">
                 <svg viewBox="0 0 24 24">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
@@ -668,8 +729,53 @@
                     <h3>HD Artwork & Posters</h3>
                     <p>Integrates directly with TVDB and TMDB metadata services to load high-resolution posters and widescreen episode backdrops.</p>
                 </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- Shield / lock icon for Privacy -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Serverless iCloud Privacy</h3>
+                    <p>Your data stays yours. Plotpoint saves data in local Core Data and syncs across Apple devices using private iCloud. No custom tracking servers.</p>
+                </div>
             </div>
         </section>
+    </main>
+
+    <!-- Tab 5: FAQ -->
+    <main id="tab-faq" class="tab-section">
+        <div class="container">
+            <div class="doc-card">
+                <h1>Frequently Asked Questions</h1>
+                <div class="doc-meta">Quick answers about watchlists, syncing, and privacy.</div>
+                <div class="doc-divider"></div>
+                
+                <div class="doc-section">
+                    <h2>What is Plotpoint?</h2>
+                    <p>Plotpoint is a premium, privacy-focused iOS and macOS tracking application. It allows you to organize your media watchlist, monitor upcoming show release dates, view airing schedules, and synchronize your watch history seamlessly—all protected behind fully native spoiler controls.</p>
+                </div>
+                
+                <div class="doc-section">
+                    <h2>Does Plotpoint track my personal data?</h2>
+                    <p>No. Plotpoint is built on a 100% local database model using Apple's secure Core Data container. Your settings and API keys sync exclusively via your personal Apple iCloud Key-Value store. No external servers or third-party tracking databases collect your personal data.</p>
+                </div>
+                
+                <div class="doc-section">
+                    <h2>How does Plotpoint avoid TV show episode spoilers?</h2>
+                    <p>Plotpoint features a native "Hide Episode Spoilers" toggle. When enabled, episode descriptions are hidden behind a spoiler alert, and specific episode thumbnails are replaced with general season posters until you mark the episode as watched.</p>
+                </div>
+                
+                <div class="doc-section">
+                    <h2>How do I sync my watchlist with Simkl?</h2>
+                    <p>Simply navigate to settings inside the app and authorize your Simkl account. Plotpoint's background SyncManager executes all API calls and database commits asynchronously on dedicated threads, ensuring your watchlists, ratings, and history remain perfectly in sync without ever causing frame rate drops.</p>
+                </div>
+                
+                <div class="doc-section">
+                    <h2>What metadata services does Plotpoint use?</h2>
+                    <p>Plotpoint fetches show schedules and user lists from Simkl, movie poster art from The Movie Database (TMDB), and high-resolution episode backdrops from TheTVDB (TVDB). If you have their API keys, you can input them directly into the app for localized metadata lookups.</p>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Tab 2: Support -->
@@ -812,6 +918,7 @@
             
             <div class="footer-links">
                 <span onclick="showTab('support')" class="footer-link">Support</span>
+                <span onclick="showTab('faq')" class="footer-link">FAQ</span>
                 <span onclick="showTab('privacy')" class="footer-link">Privacy Policy</span>
                 <span onclick="showTab('terms')" class="footer-link">Terms of Service</span>
             </div>

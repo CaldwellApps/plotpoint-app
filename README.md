@@ -22,16 +22,16 @@ Protect yourself from plot details before you watch. When enabled, Plotpoint:
 ### 🔄 Multi-Device iCloud Sync
 Your watchlist and personal preferences are backed up automatically and synced securely across all your personal iOS and macOS devices using Apple iCloud.
 
-### 🔌 Optional Simkl Sync
-Optionally connect your Simkl account to instantly import your watch history, synchronize watchlists, and update status and ratings across all platforms.
+### 🔌 Required Simkl Sync
+Plotpoint integrates directly with Simkl to retrieve and synchronize your watchlists, show progress, and ratings. A Simkl account is required to use the tracking and syncing features of the app.
 
 ---
 
 ## Getting Started
 
 1. **Download & Install**: Launch Plotpoint on your iPhone, iPad, or Mac.
-2. **Organize your Watchlist**: Add shows and movies you want to follow.
-3. **Customize your Experience**: Go to Settings to toggle spoiler controls, choose your theme, or connect your Simkl account.
+2. **Connect Simkl**: Log in with your Simkl account in Settings to sync and load your watched history, movies, and TV shows.
+3. **Track & Customize**: Browse your watchlist, view upcoming episode calendars, or configure native spoiler warnings and themes.
 
 ---
 

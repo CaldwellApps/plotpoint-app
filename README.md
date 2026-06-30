@@ -1,48 +1,50 @@
-# Plotpoint Landing Page & Support Site
+# Plotpoint
 
-The official, public-facing website repository for the **Plotpoint** iOS & macOS mobile application, owned by **Caldwell Apps**. 
+Welcome to **Plotpoint** — the ultimate personal media companion for iOS and macOS. Plotpoint is a clean, modern, and privacy-first application designed to help you organize your watchlist, monitor upcoming episodes, and sync your watch history.
 
-This repository serves as the public landing page, customer support portal, and holds the legally required **Privacy Policy** and **Terms of Service** documentation required for submission and approval on the Apple App Store.
+Whether you're tracking current TV shows, building a list of movies to watch, or checking what airs this week, Plotpoint keeps everything in sync while keeping your experience spoiler-free.
 
-## Features
+---
 
-- **Responsive Landing Page**: Sleek, modern charcoal-green theme designed to align with the native app's aesthetics.
-- **Interactive Documentation**: Single-page hash routing (`#privacy`, `#terms`) to allow direct links for App Store Connect reviewers.
-- **Support Forms**: Contact routes mapping to `support@caldwellapps.com` to handle support tickets.
-- **100% Client-Side**: Powered by vanilla HTML, CSS, and JS. Loads instantly and runs entirely on the browser with zero external dependencies.
+## Key Features
 
-## Live Website
+### 📺 Smart Watchlist Tracking
+Organize all your television series and movies in one unified list. Keep track of what season and episode you're currently on, rate your favorite media, and manage what to watch next.
 
-The website is hosted on GitHub Pages:
-- **Landing Page & Support**: [https://CaldwellApps.github.io/plotpoint-app/](https://CaldwellApps.github.io/plotpoint-app/)
-- **Privacy Policy**: [https://CaldwellApps.github.io/plotpoint-app/#privacy](https://CaldwellApps.github.io/plotpoint-app/#privacy)
-- **Terms of Service**: [https://CaldwellApps.github.io/plotpoint-app/#terms](https://CaldwellApps.github.io/plotpoint-app/#terms)
+### 📅 Release & Airing Calendars
+Never miss an episode release again. Plotpoint features an interactive calendar detailing release dates and exact air times for your tracked shows and upcoming movies, customized to your local timezone.
 
-## Local Development
+### 🛡️ Native Spoiler Protection
+Protect yourself from plot details before you watch. When enabled, Plotpoint:
+- Replaces episode-specific thumbnails with season cover art.
+- Completely hides episode synopses behind an interactive reveal banner until you mark the episode as watched.
 
-To run or preview the website locally on your computer:
+### 🔄 Multi-Device iCloud Sync
+Your watchlist and personal preferences are backed up automatically and synced securely across all your personal iOS and macOS devices using Apple iCloud.
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/CaldwellApps/plotpoint-app.git
-   ```
-2. Open the directory:
-   ```bash
-   cd plotpoint-app
-   ```
-3. Open `index.html` in any web browser to view:
-   ```bash
-   open index.html
-   ```
+### 🔌 Optional Simkl Sync
+Optionally connect your Simkl account to instantly import your watch history, synchronize watchlists, and update status and ratings across all platforms.
 
-## Deployment on GitHub Pages
+---
 
-This project is configured to deploy automatically via GitHub Pages from the root of the `main` branch. 
+## Getting Started
 
-To redeploy changes:
-1. Commit updates to your local repository.
-2. Push your commits to GitHub:
-   ```bash
-   git push origin main
-   ```
-3. GitHub Actions will rebuild and deploy the site live within 1–2 minutes.
+1. **Download & Install**: Launch Plotpoint on your iPhone, iPad, or Mac.
+2. **Organize your Watchlist**: Add shows and movies you want to follow.
+3. **Customize your Experience**: Go to Settings to toggle spoiler controls, choose your theme, or connect your Simkl account.
+
+---
+
+## Privacy First
+
+We believe your watch history belongs to you. Plotpoint operates under a strict privacy-first model:
+- **No Tracking**: We do not run any remote user tracking, profiling, or custom analytics servers.
+- **Secure Storage**: Your credentials and settings are stored locally on your device or synced via your own secure iCloud container.
+
+---
+
+## Support & Feedback
+
+We'd love to hear from you! If you have any questions, encounter a bug, or want to suggest a new feature:
+- **Email us**: [support@caldwellapps.com](mailto:support@caldwellapps.com)
+- **Visit the Help Desk**: [CaldwellApps Support & Documentation](https://CaldwellApps.github.io/plotpoint-app/)

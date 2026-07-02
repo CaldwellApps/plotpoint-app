@@ -997,7 +997,7 @@
 
     <!-- Interactive Navigation Scripts -->
     <script>
-        function showTab(tabId) {
+        function showTab(tabId, updateHash = true) {
             // Hide all tab sections
             document.querySelectorAll('.tab-section').forEach(section => {
                 section.classList.remove('active');
@@ -1020,9 +1020,32 @@
                 targetLink.classList.add('active');
             }
             
+            // Update URL hash
+            if (updateHash) {
+                window.location.hash = 'tab-' + tabId;
+            }
+            
             // Scroll to top
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
+
+        // Router to handle page loads and back/forward navigation
+        function handleRouting() {
+            const hash = window.location.hash;
+            if (hash) {
+                const tabId = hash.replace('#tab-', '');
+                if (document.getElementById('tab-' + tabId)) {
+                    showTab(tabId, false);
+                    return;
+                }
+            }
+            // Fallback to home
+            showTab('home', false);
+        }
+
+        // Listen for history and initial load events
+        window.addEventListener('hashchange', handleRouting);
+        window.addEventListener('DOMContentLoaded', handleRouting);
         
         function handleSubmit(event) {
             event.preventDefault();

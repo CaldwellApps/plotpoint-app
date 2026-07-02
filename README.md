@@ -8,7 +8,7 @@ Whether you're tracking current TV shows, building a list of movies to watch, or
 
 ## Key Features
 
-### 🔌 Seamless Simkl Integration
+### 🔌 Seamless Simkl Integration (Pro)
 Plotpoint connects directly with your Simkl account to automatically import and synchronize your entire watch history, watchlist progress, and ratings. Linking your Simkl account enables real-time synchronization so your progress updates are preserved across all your devices and services.
 
 ### 📺 Smart Watchlist Tracking
@@ -17,7 +17,7 @@ Organize all your television series and movies in one unified list. Keep track o
 ### 📅 Release & Airing Calendars
 Never miss an episode release again. Plotpoint features an interactive calendar detailing release dates and exact air times for your tracked shows and upcoming movies, customized to your local timezone.
 
-### 🛡️ Native Spoiler Protection
+### 🛡️ Native Spoiler Protection (Pro)
 Protect yourself from plot details before you watch. When enabled, Plotpoint:
 - Replaces episode-specific thumbnails with season cover art.
 - Completely hides episode synopses behind an interactive reveal banner until you mark the episode as watched.
